@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSF/JSFManagedBean.java to edit this template
  */
-package jsf;
+package ma.aouzen.tp2aouzen.jsf;
 
 import jakarta.inject.Named;
 import jakarta.enterprise.context.RequestScoped;
@@ -13,9 +13,9 @@ import java.util.List;
  *
  * @author PC
  */
-@Named(value = "affichage")
+@Named(value = "affichageTp3Bean")
 @RequestScoped
-public class AffichageBean {
+public class AffichageTp3Bean {
     private int nombre;
     public int getNombre(){
         return this.nombre;
@@ -31,13 +31,13 @@ public class AffichageBean {
         return res;
     }
     public String afficher(){
-        return "affichage_4?nb="+nombre+"&amp;faces-redirect=true";
+        return "affichage__4?nb="+nombre+"&amp;faces-redirect=true";
     }
 
     /**
-     * Creates a new instance of bean
+     * Creates a new instance of AffichageTp3Bean
      */
-    public AffichageBean() {
+    public AffichageTp3Bean() {
     }
     
 }
